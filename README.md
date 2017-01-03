@@ -16,12 +16,12 @@ Build a board website without scaffolding function
 5. Be able to tab a back button
 
 # UI
-Apply `The Foundation UI` front-end framework.  
+Apply [The Foundation UI](http://foundation.zurb.com/) front-end framework.  
 And CSS Animation & JavaScript
 
 # Gem Library
-1. Devise Gem
-2. Carrierwave Gem
+1. [Devise Gem](https://github.com/plataformatec/devise)
+2. [Carrierwave Gem](https://github.com/carrierwaveuploader/carrierwave)
 
 # API
 1. Get posts API  
