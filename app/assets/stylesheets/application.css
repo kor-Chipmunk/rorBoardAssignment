@@ -13,3 +13,9 @@
  *= require_tree .
  *= require_self
  */
+
+.loginbox {
+    margin-top: 50px;
+    padding: 10px;
+    border: 3px solid gray;
+}
