@@ -1,2 +1,15 @@
-<h1>Post#edit</h1>
-<p>Find me in app/views/post/edit.html.erb</p>
+<div class="container" style="margin-top: 50px;">
+    <h2>글쓰기 페이지</h2>
+    <%= form_for(@post) do |f| %>
+        <%= f.text_field(:title, value: @post.title, size: 30, placeholder: "제목", class: "form-control") %><br>
+        <%= f.text_area(:detail, value: @post.detail, size: "30x15", placeholder: "내용", class: "form-control") %><br>
+        <div class="row">
+            <div class="col-md-2">
+                <%= link_to "뒤로 가기", posts_path, class: "btn btn-default btn-lg btn-blick" %>
+            </div>
+            <div class="col-md-2 col-md-offset-8">
+                <%= f.submit("수정하기", class: "btn btn-success btn-lg btn-block") %>
+            </div>
+        </div>
+    <% end %>
+</div>

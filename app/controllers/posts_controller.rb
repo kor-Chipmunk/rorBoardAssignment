@@ -28,10 +28,7 @@ class PostsController < ApplicationController
   end
 
   def edit
-    post = post_by_id
-    
-    @title = post.title
-    @detail = post.detail
+    @post = post_by_id
   end
 
   def update

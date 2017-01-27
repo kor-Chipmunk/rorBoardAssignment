@@ -13,6 +13,7 @@
             <th width="100">게시글 번호</th>
             <th>게시글 제목</th>
             <th width="50"></th>
+            <th width="50"></th>
           </tr>
         </thead>
         <tbody>
@@ -23,6 +24,9 @@
             </td>
             <td>
               <%= link_to post.title, post_path(post) %>
+            </td>
+            <td>
+              <%= link_to '', edit_post_url(post), method: 'get', class: 'glyphicon glyphicon-edit' %>
             </td>
             <td>
               <%= link_to '', post_url(post), method: 'delete', class: "glyphicon glyphicon-remove", remote: true, data: { confirm: "정말 삭제하시겠습니까?" } %>
